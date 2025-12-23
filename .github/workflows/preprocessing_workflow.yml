@@ -36,4 +36,5 @@ jobs:
     # 5. (Opsional) Cek apakah file output berhasil dibuat
     - name: Verify Output Files
       run: |
+        cd preprocessing
         ls -R data_processed
