@@ -27,13 +27,12 @@ jobs:
         pip install -r requirements.txt
 
     # 4. Jalankan Script Otomatisasi
-    # Perhatikan path-nya: script ada di folder preprocessing
     - name: Run Preprocessing Script
       run: |
         cd preprocessing
         python Automate_faiz_muhamad_al_ghifari_rc9k.py
 
-    # 5. (Opsional) Cek apakah file output berhasil dibuat
+    # 5. Cek apakah file output berhasil dibuat
     - name: Verify Output Files
       run: |
         cd preprocessing
